@@ -1,0 +1,260 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace projeto_lanchonete
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int opcao, opcaolanches, opcaobebidas, opcaocombos;
+            double subtotal = 0;
+
+            do
+
+            {
+
+                Console.Clear();
+                Console.WriteLine("CANTINA DA TIA MARIA");
+                Console.WriteLine("1- SALGADOS");
+                Console.WriteLine("2- BEBIDAS FRIAS E QUENTES");
+                Console.WriteLine("3- COMBOS");
+                Console.WriteLine("4- FINALIZAR");
+                Console.WriteLine("5- DIGITE 0 PARA VOLTAR AO MENU INICIAL");
+
+                opcao = Convert.ToInt32(Console.ReadLine());
+
+                if (opcao == 1)
+                {
+                    do
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Novo Menu");
+                        Console.WriteLine("1- COXINHA-----5.00");
+                        Console.WriteLine("2- ESFIHA DE CARNE------5.00");
+                        Console.WriteLine("3- MISTO-------5.00");
+                        Console.WriteLine("4- ESFIHA DE FRANGO-----5.00");
+                        Console.WriteLine("5- PÃO DE BATATA DE CALABRESA----5.00");
+                        Console.WriteLine("6- ESFIHA DE ESCAROLA-----5.00");
+                        Console.WriteLine("7- PÃO DE QUEIJO----5.00");
+                        Console.WriteLine("8- HAMBURGÃO----5.00");
+                        Console.WriteLine("9- CROSSAINT DE 4 QUEIJOS----5.00");
+                        Console.WriteLine("10- FOLHADO DE PRESUNTO E QUEIJO----5.00");
+                        opcaolanches = Convert.ToInt32(Console.ReadLine());
+
+
+                        if (opcaolanches == 1)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou coxinha, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaolanches == 2)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou esfiha de carne, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaolanches == 3)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou misto, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaolanches == 4)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou esfiha de frango, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaolanches == 5)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou pao de batata de calabresa, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaolanches == 6)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou esfiha de escarola, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaolanches == 7)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou pão de queijo, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaolanches == 8)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou hamburgão, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaolanches == 9)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou crossaint de quatro queijos, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaolanches == 10)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou folhado de presunto e queijo, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+
+                    } while (opcaolanches != 0);
+                }
+                else if (opcao == 2)
+                {
+                    do
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Novo Menu");
+                        Console.WriteLine("1- CAFÉ-----2.00");
+                        Console.WriteLine("2- SUCO DE LARANJA------6.00");
+                        Console.WriteLine("3- COCA COLA-------5.00");
+                        Console.WriteLine("4- GUARANÁ-----5.00");
+                        Console.WriteLine("5- SPRITE----5.00");
+                        Console.WriteLine("6- AGUA MINERAL-----5.00");
+                        Console.WriteLine("7- AGUA COM GÁS----5.00");
+                        Console.WriteLine("8- SUCO DE LIMÃO DE CAIXINHA----5.00");
+                        Console.WriteLine("9- TODDYNHO----5.00");
+                        Console.WriteLine("10- CAPPUCINO----5.00");
+                        opcaobebidas = Convert.ToInt32(Console.ReadLine());
+
+                        if (opcaobebidas == 1)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 2.00;
+                            Console.WriteLine("Você selecionou café, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaobebidas == 2)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 6.00;
+                            Console.WriteLine("Você selecionou suco de laranja, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaobebidas == 3)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou coca cola, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaobebidas == 4)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou guaraná, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaobebidas == 5)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou sprite, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaobebidas == 6)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou aguá mineral, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaobebidas == 7)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou agua com gás, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaobebidas == 8)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou suco de limão de caixinha , seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaobebidas == 9)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou toddynho, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                        else if (opcaobebidas == 10)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou cappucino, seu subtotal foi de:" + subtotal);
+                            Console.ReadKey();
+                        }
+                    } while (opcaobebidas != 0);
+                }
+
+                else if (opcao == 3)
+                {
+                        do
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Novo Menu");
+                            Console.WriteLine("1- COXINHA COM SUCO DE LARANJA-----8.50");
+                            Console.WriteLine("2- DOIS SALGADOS------8.00");
+                            Console.WriteLine("3- TRES SALGADOS E UM REFRIGERANTE-------15.00");
+                            Console.WriteLine("4- CROSSAINT E CAFÉ-----5.00");
+                            opcaocombos = Convert.ToInt32(Console.ReadLine());
+
+                            if (opcaocombos == 1)
+                            {
+                                Console.Clear();
+                                subtotal = subtotal + 8.50;
+                                Console.WriteLine("Você selecionou Combo 1- Coxinha com suco de laranja, seu subtotal foi de:" + subtotal);
+                                Console.ReadKey();
+                            }
+                            else if (opcaocombos == 2)
+                            {
+                                Console.Clear();
+                                subtotal = subtotal + 8.00;
+                                Console.WriteLine("Você selecionou Combo 2- Dois salgados, seu subtotal foi de:" + subtotal);
+                                Console.ReadKey();
+                            }
+                            else if (opcaocombos == 3)
+                            {
+                                Console.Clear();
+                                subtotal = subtotal + 15.00;
+                                Console.WriteLine("Você selecionou Combo 3- Três salgados e um refrigerante, seu subtotal foi de:" + subtotal);
+                                Console.ReadKey();
+                            }
+                            else if (opcaocombos == 4)
+                            {
+                                Console.Clear();
+                                subtotal = subtotal + 5.00;
+                                Console.WriteLine("Você selecionou Combo 4- Crossaint e café, seu subtotal foi de:" + subtotal);
+                                Console.ReadKey();
+                            }
+
+                        } while (opcaocombos != 0);
+                }
+            } while (opcao != 4);
+        }
+    }
+}
+
